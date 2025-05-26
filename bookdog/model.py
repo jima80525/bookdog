@@ -63,6 +63,11 @@ class BooksModel:
             tableModel.setHeaderData(columnIndex, Qt.Horizontal, header)
         self.model = tableModel
 
+    def sort(self, column, order):
+        """Sort the books by the specified column (default: Date)."""
+        self.model.sort(column, order)
+        self.model.select()
+
     def addBook(self, data):
         """Add a book to the database."""
         rows = self.model.rowCount()

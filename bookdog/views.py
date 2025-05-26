@@ -74,6 +74,8 @@ class Window(QMainWindow):
         self.table.resizeColumnsToContents()
         self.table.setColumnHidden(0, True)
         self.table.setItemDelegateForColumn(3, TestDelegate(self.booksModel))
+        # Sort by the date column (assumed to be column 4, index 3)
+        self.table.sortByColumn(4, Qt.DescendingOrder)
         # Create buttons
         self.addButton = QPushButton("Add...")
         self.addButton.clicked.connect(self.openAddDialog)
