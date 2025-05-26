@@ -5,7 +5,7 @@ from invoke import task
 import setuptools
 import sys
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 
 @task
