@@ -18,7 +18,7 @@ dependencies = [
    "PyQt5-Qt5==5.15.2",
    "PyQt5-sip==12.11.0",
 ]
-dynamic = ["version", "description"]
+dynamic = ["version", "description", "requires-python"]
 
 [project.optional-dependencies]
 dev = ["black", 'bump2version >= 1.0.1', 'bumpversion >= 0.6.0', 'invoke >= 1.7.3']
